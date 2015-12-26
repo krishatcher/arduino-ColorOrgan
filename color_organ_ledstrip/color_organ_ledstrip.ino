@@ -124,17 +124,17 @@ void seven(int totalLEDs) {
 }
 
 void threeMarquee(int totalLEDs) {
-  /*if (iteration == 10) {
-    /* ensure that we only change the offset once every 100 iterations, so that you can see the marquee effect 
+  if (iteration == 10) {
+    /* ensure that we only change the offset once every 100 iterations, so that you can see the marquee effect */
     iteration = 0;
 
     if (marqueeOffset < totalLEDs) {
-      /* we can only offset the count up to the total number of LEDs we're processing 
+      /* we can only offset the count up to the total number of LEDs we're processing */
       marqueeOffset++;
     } else {
       marqueeOffset = 0;
     }
-  }*/
+  }
 
   for (int i = 0; i < totalLEDs; i++){  
     int ledPosition = i + marqueeOffset;  
@@ -177,7 +177,6 @@ void loop(){
   //setColors(7, 60);
   threeMarquee(60);
 }
-  //Serial.println();
 
 
 

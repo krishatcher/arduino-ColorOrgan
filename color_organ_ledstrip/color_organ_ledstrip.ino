@@ -136,6 +136,8 @@ void threeMarquee(int totalLEDs) {
     }
   }
 
+  /* Hello world test */
+
   for (int i = 0; i < totalLEDs; i++){  
     int ledPosition = i + marqueeOffset;  
 
